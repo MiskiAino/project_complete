@@ -5,10 +5,12 @@
     -bootstrap
     -jquery
     -slick
-    -WOW.animation-->
+    -WOW.animation
+    -TABS-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
     <!--slick-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -28,7 +30,18 @@
     <![endif]-->
 </head>
 <body>
-<h1></h1>
+<div class="wrapper">
+    <div class="tabs">
+        <span class="tab">Вкладка 1</span>
+        <span class="tab">Вкладка 2</span>
+        <span class="tab">Вкладка 3</span>
+    </div>
+    <div class="tab_content">
+        <div class="tab_item">Содержимое 1</div>
+        <div class="tab_item">Содержимое 2</div>
+        <div class="tab_item">Содержимое 3</div>
+    </div>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -41,5 +54,9 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <!--WOW/\animate-->
 <script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
